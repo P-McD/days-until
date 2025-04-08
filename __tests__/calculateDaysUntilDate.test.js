@@ -1,4 +1,4 @@
-const { calculateDaysUntilDate } = require("../calculateDaysUntilDate");
+import calculateDaysUntilDate from "../calculateDaysUntilDate";
 
 describe("calculateDaysUntilDate", () => {
   test("function returns 0 if passed a target date value equal to the current date", () => {

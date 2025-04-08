@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "A project to practisse writing clean code.",
   "main": "index.js",
+  "type":"module",
   "devDependencies": {
     "jest": "^29.7.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC"
+ 
 }
