@@ -1,5 +1,7 @@
 function calculateDaysUntilDate (currentDate, targetDate) {
-    const daysUntilTargetDate = Math.round((targetDate - currentDate) / (1000 * 60 * 60 * 24));
+    const millisecondsInADay = 1000 * 60 * 60 * 24;
+    const millisecondsBetweenDates = targetDate - currentDate;
+    const daysUntilTargetDate = Math.round(millisecondsBetweenDates / millisecondsInADay);
     return daysUntilTargetDate;
 
 }

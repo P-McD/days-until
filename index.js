@@ -1,9 +1,10 @@
 import calculateDaysUntilDate from "./calculateDaysUntilDate.js";
 
-function displayDaysRemaining (elementId, daysRemaining){
-    const daysElement = document.getElementById(elementId);
-    daysElement.innerText = daysRemaining;
+function displayDaysRemaining(elementId, daysRemaining) {
+  const daysElement = document.getElementById(elementId);
+  daysElement.innerText = daysRemaining;
 }
+
 function calculateDatesAndDisplay() {
   const currentDate = new Date();
   const christmasDate = new Date("2025-12-25");
@@ -13,8 +14,7 @@ function calculateDatesAndDisplay() {
   displayDaysRemaining("days-until-christmas", daysUntilChristmas);
 
   const daysUntilNewYear = calculateDaysUntilDate(currentDate, newYearsDate);
-  displayDaysRemaining("days-until-new-year", daysUntilNewYear)
+  displayDaysRemaining("days-until-new-year", daysUntilNewYear);
 }
 
 calculateDatesAndDisplay();
-
