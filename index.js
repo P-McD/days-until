@@ -1,9 +1,5 @@
-import calculateDaysUntilDate from "./calculateDaysUntilDate.js";
-
-function displayDaysRemaining(elementId, daysRemaining) {
-  const daysElement = document.getElementById(elementId);
-  daysElement.innerText = daysRemaining;
-}
+import calculateDaysUntilDate from "./utils/calculateDaysUntilDate.js";
+import displayDaysRemaining from "./utils/displayDaysRemaining.js";
 
 function calculateDatesAndDisplay() {
   const currentDate = new Date();

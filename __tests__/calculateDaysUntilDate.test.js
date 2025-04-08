@@ -1,4 +1,4 @@
-import calculateDaysUntilDate from "../calculateDaysUntilDate";
+import calculateDaysUntilDate from "../utils/calculateDaysUntilDate";
 
 describe("calculateDaysUntilDate", () => {
   test("function returns 0 if passed a target date value equal to the current date", () => {
