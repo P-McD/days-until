@@ -1,6 +1,7 @@
 function calculateDaysUntilDate (currentDate, targetDate) {
-    return 0;
+    const daysUntilTargetDate = Math.round((targetDate - currentDate) / (1000 * 60 * 60 * 24));
+    return daysUntilTargetDate;
 
 }
 
-module.exports = { calculateDaysUntilDate }
+export default calculateDaysUntilDate;
