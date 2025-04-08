@@ -6,12 +6,12 @@ function calculateDatesAndDisplay() {
   const newYearsDate = new Date("2026-01-01");
 
   const daysUntilChristmas = calculateDaysUntilDate(currentDate, christmasDate);
-  const christmasElement = document.getElementById("my-element");
-  christmasElement.innerText = daysUntilChristmas;
+  const christmasDaysElement = document.getElementById("days-until-christmas");
+  christmasDaysElement.innerText = daysUntilChristmas;
 
   const daysUntilNewYear = calculateDaysUntilDate(currentDate, newYearsDate);
-  const newYearsElement = document.getElementById("my-element");
-  newYearsElement.innerText = daysUntilNewYear;
+  const newYearsDaysElement = document.getElementById("days-until-new-year");
+  newYearsDaysElement.innerText = daysUntilNewYear;
 }
 
 calculateDatesAndDisplay();
