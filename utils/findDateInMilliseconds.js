@@ -1,6 +1,13 @@
 function findDateInMilliseconds(monthDayString, currentDate) {
   const currentYear = currentDate.getFullYear();
-  const targetDateString = `${currentYear}-${monthDayString}`;
-  return new Date(targetDateString);
+  let targetDateString = `${currentYear}-${monthDayString}`;
+  let targetDateInMilliseconds = new Date(targetDateString);
+
+  if (targetDateInMilliseconds < currentDate) {
+    targetDateString = `${currentYear + 1}-${monthDayString}`;
+    targetDateInMilliseconds = new Date(targetDateString);
+  }
+
+  return targetDateInMilliseconds;
 }
 export default findDateInMilliseconds;
