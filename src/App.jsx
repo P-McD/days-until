@@ -1,13 +1,26 @@
-import './App.css'
-import CountdownCard from './components/CountdownCard'
+import "./App.css";
+import CountdownList from "./components/CountdownList";
+import calculateDaysUntilDate from "./utils/calculateDaysUntilDate";
+import collateEventDetails from "./utils/collateEventDetails";
+import findDateInMilliseconds from "./utils/findDateInMilliseconds";
 
+function prepareEventsData(rawEventsData) {
+  const currentDate = new Date();
+
+  for (const event of rawEventsData) {
+    const targetDate = findDateInMilliseconds(event.monthAndDay, currentDate);
+    const daysRemaining = calculateDaysUntilDate(currentDate, targetDate);
+    const preparedData = collateEventDetails(daysRemaining, event);
+
+    return preparedData;
+  }
+}
 function App() {
-
   return (
     <>
-<CountdownCard event={{eventName: "test", daysRemaining:2, imageUrl:"https://arbourblooms.ie/wp-content/uploads/2022/01/Valentines.jpg"}}></CountdownCard>
+      <CountdownList></CountdownList>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
