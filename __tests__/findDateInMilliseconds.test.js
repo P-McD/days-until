@@ -1,4 +1,6 @@
-import findDateInMilliseconds from "../utils/findDateInMilliseconds";
+
+import findDateInMilliseconds from "../src/utils/findDateInMilliseconds";
+
 
 describe("findDateInMilliseconds", () => {
   test("function returns the date in milliseconds for the current year when passed a day and month which is later in the year than the current date", () => {

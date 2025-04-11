@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+ #navbar
+ {
+  text-align: left;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100vw;
+ }
+ a {
+ text-decoration: none; 
+}
