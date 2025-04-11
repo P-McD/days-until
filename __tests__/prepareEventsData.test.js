@@ -38,6 +38,7 @@ describe("prepareEventsData", () => {
     ];
     const preparedData = prepareEventsData(testEventData, testCurrentDate);
     expect(preparedData).toHaveLength(2);
+    console.log(preparedData)
     preparedData.forEach((eventObject) => {
       expect(eventObject).toHaveProperty("eventName"),
         expect(eventObject).toHaveProperty("daysRemaining"),
