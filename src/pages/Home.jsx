@@ -1,4 +1,4 @@
-import CountdownList from "../components/CountdownList";
+import CountdownList from "../components/organisms/CountdownList";
 import React from "react";
 import prepareEventsData from "../utils/prepareEventsData";
 import eventList from "../data/events";
